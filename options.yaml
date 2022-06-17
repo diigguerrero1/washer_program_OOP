@@ -1,0 +1,22 @@
+washer:
+  Motor:
+    power:
+      low_power: 'low_power'
+      medium_power: 'medium_power'
+      high_power: 'high_power'
+  washer_type:
+    smart: 1
+    fast: 2
+    strong: 3
+    spin-dry: 4
+  water_level:
+    low: 1
+    medium: 2
+    alto: 3
+  dirt_level:
+    low: 1
+    high: 2
+  aditional_functions:
+    soaking: 1
+    strong_stains: 2
+    none: 3
