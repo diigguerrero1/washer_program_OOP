@@ -12,7 +12,7 @@ washer:
   water_level:
     low: 1
     medium: 2
-    alto: 3
+    high: 3
   dirt_level:
     low: 1
     high: 2

@@ -10,6 +10,10 @@ class Washer_Motor:
         self.reference = reference
         self.power = power
 
+    def start(self):
+        if self.stauts == True:
+            pass
+
 
 # Class what define the washer and their methoths
 class Washer:
@@ -29,12 +33,11 @@ class Washer:
         self.aditional_functions = aditional_functions
         self._motor = motor
 
-    def encender(self, status, motor):
-        if status == True:
-            self.motor = motor
+    def encender(self):
+        if self.stauts == True:
+            motor = self._motor
         else:
-            self.motor = motor
-
+            motor = False
 
 
     
