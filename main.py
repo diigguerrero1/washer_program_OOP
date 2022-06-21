@@ -29,9 +29,7 @@ def initialition_washer(status, washer_type, water_level, dirt_level, aditional_
         power_motor = power['high_power']
 
     washer = Washer(status, washer_type, water_level, dirt_level, aditional_functions, Washer_Motor(status, "k37973hj0", power_motor))
-
-    print(vars(washer))
-    print(vars(washer._motor))
+    washer.wash()
 
 
 # Function what define the methoth of wash, and the vars for activate the washer motor
@@ -40,6 +38,7 @@ def start_washer():
     status = False
 
     start = input("desea arrancar la lavadora y/n: ")
+    os.system("clear")
 
     if start == "y":
 
@@ -49,15 +48,19 @@ def start_washer():
 
         print(f'Tipos de lavado: {washer_type_dict}')
         washer_type = int(input("escoja el tipo de lavado con el respectivo número: "))
+        os.system("clear")
 
         print(f'Niveles de agua: {water_level_dict}')
         water_level = int(input("Escoge el nivel de agua con el respectivo número: "))
+        os.system("clear")
 
         print(f'Nivel de suciedad: {dirt_level_dict}')
         dirt_level = int(input("Escoja el nivel de suciedad con el respectivo número: "))
+        os.system("clear")
 
         print(f'Funciones adicionales: {aditional_functions_dict}')
         aditional_functions = int(input("Escoja las funciones adicionales con el respectivo número: "))
+        os.system("clear")
 
     elif start == "n":
         print("Gracias por no usar agua innecesariamente")
@@ -73,6 +76,6 @@ def run():
 
 
 if __name__ == "__main__":
-    os.system("cls")
+    os.system("clear")
     run()
 
